@@ -1,0 +1,1 @@
+This is the simple example I used to show two way binding at the Ember JS meetup in September 2012. My lightning talk was called "First Steps in Learning Ember".

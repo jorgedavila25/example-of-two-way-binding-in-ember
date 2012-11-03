@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+<script src="lib/jquery.js"></script>
+<script src="lib/handlebars.js"></script>
+<script src="lib/ember.js"></script>
+<script src="js/app.js"></script>
+</head>
+<body>
+	<script type="text/x-handlebars">
+	<h1>Color Generator</h1>
+	{{#view App.box}}
+		{{view Ember.TextField placeholder="enter hex (object 1)" valueBinding="App.hex.color"}}
+		{{view Ember.TextField placeholder="enter hex (object 2)" valueBinding="App.hextwo.secondcolor"}}
+		<div {{bindAttr style="view.box"}}></div>
+	{{/view}}
+	</script>
+</body>
+</html>
